@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Physics, Debug, RigidBody, CuboidCollider } from "@react-three/rapier";
+import { Canvas, useThree, useFrame } from "@react-three/fiber";
+import { Environment, OrbitControls } from "@react-three/drei";
+import Character from "./components/Character";
+import Sun from "./components/Sun";
+import Floor from "./components/Floor";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="div-container">
+      <Canvas>
+        <ambientLight intensity={0.5} />
+        <Physics>
+          <Debug />
+          <Floor />
+          <Character />
+        </Physics>
+        <Sun />
+        <Environment files="/sky.hdr" background resolution={1} />
+      </Canvas>
     </div>
   );
 }
