@@ -1,6 +1,6 @@
-import { Physics, Debug, RigidBody, CuboidCollider } from "@react-three/rapier";
-import { Canvas, useThree, useFrame } from "@react-three/fiber";
-import { Environment, OrbitControls } from "@react-three/drei";
+import { Physics, Debug } from "@react-three/rapier";
+import { Canvas } from "@react-three/fiber";
+import { Environment } from "@react-three/drei";
 import Character from "./components/Character";
 import Sun from "./components/Sun";
 import Floor from "./components/Floor";
