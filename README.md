@@ -1,4 +1,4 @@
-#https://codesandbox.io/p/github/gfduck/character-sun-r3f/ Live demo
+https://codesandbox.io/p/github/gfduck/character-sun-r3f/ Live demo
 
 # Getting Started with Create React App
 
